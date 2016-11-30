@@ -1,0 +1,27 @@
+{
+    "name": "pw/PwCaptcha",
+	 "version": "1.0.0",
+	"type": "library",	 
+    "description": "Create and validate captcha Image",
+    "require": {
+        "php": "^5.3.3 || ^7.0",
+        "another-vendor/package": "1.*"
+    },
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/crajbanshi/captcha"
+        }
+    ],
+	"authors":{
+            "name": "Chanchal Rajbanshi",
+            "email": "crajbanshi@gmail.com",
+            "role": "Developer"
+        },
+	"autoload": {
+        "classmap": [
+            "PW/PwCaptcha.php"           
+        ]
+},
+	
+}
