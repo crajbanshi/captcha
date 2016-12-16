@@ -10,7 +10,7 @@
 	"repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/crajbanshi/captcha"
+            "url": "https://github.com/crajbanshi/pwcaptcha"
         }
     ],
 	"authors":{
