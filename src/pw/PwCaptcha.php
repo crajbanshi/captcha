@@ -375,44 +375,5 @@ class PwCaptcha
     	}
     }
 
-    /* public function render()
-    {
-        $uri = Request::createFromGlobals()->getUri();
-       
-        $file = 'th.png';
-        imagepng($this->getCaptcha(), $file);
-        if ($fp = fopen($file, "rb", 0)) {
-            $gambr = fread($fp, filesize($file));
-            fclose($fp);
-            $base64 = chunk_split(base64_encode($gambr));
-            
-            // output only base 64 image source
-            if (array_key_exists('recaptcha', $_REQUEST)) {
-                ob_clean();
-                if (! Request::createFromGlobals()->headers->has('referer') || Request::createFromGlobals()->headers->get('referer') != explode('?',$uri)[0] ) {
-                   throw new BadRequestHttpException('Page Not Availabe');
-                }
-                                              
-                die('data:image/jpeg/png/gif;base64,' . $base64);
-            }
-            
-            // output full html source
-            $html = new HTML('<captcha><img src="data:image/jpeg/png/gif;base64,' . $base64 . '" id="captcha">
-                <span class="fa fa-refresh" aria-hidden="true"
-                onclick="recaptcha()" id="refresh"></span>');
-            
-            $html->render();
-            
-            $html = new HTML('<script>function recaptcha(){
-                
-                $.get(\'' . $uri . '\', {recaptcha: i++})
-                    .done(function(data){
-                document.getElementById(\'captcha\').src= data;                
-                });               
-                }</script></captcha>');
-            $html->render();
-            
-            parent::render();
-        }
-    } */
+   
 }
