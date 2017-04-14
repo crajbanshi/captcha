@@ -1,11 +1,11 @@
-# pwcaptcha
+# lotus/captcha
 
 Build texture captcha is very easy using pw captcha.
 
 include library file into your page. Create an object of the PwCaptcha class.
 
-require_once 'src/PwCaptcha.php';
-$captcha = new PwCaptcha();
+require_once 'src/Captcha.php';
+$captcha = new lotus/Captcha();
 
 
 To get output of captcha image use
