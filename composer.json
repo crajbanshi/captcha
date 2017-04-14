@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
-	"ext-gd":*,
+	"ext-gd":"*",
         "another-vendor/package": "1.*"
     },
 	"repositories": [
