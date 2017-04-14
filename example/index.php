@@ -1,9 +1,13 @@
 <?php 
 
 use PW\PwCaptcha;
-require_once 'pwcaptcha-master/src/PW/PwCaptcha.php';
 
-$captcha = new PwCaptcha();
+require_once '../src/PwCaptcha.php';
+
+$captcha = new pw\PwCaptcha();
+
+
+echo "class load";
 
 if(isset($_POST['captcha'])){
 	

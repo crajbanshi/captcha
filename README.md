@@ -4,7 +4,7 @@ Build texture captcha is very easy using pw captcha.
 
 include library file into your page. Create an object of the PwCaptcha class.
 
-require_once 'pwcaptcha-master/src/PW/PwCaptcha.php';
+require_once 'src/PwCaptcha.php';
 $captcha = new PwCaptcha();
 
 
@@ -15,17 +15,17 @@ $captcha->render();
 
 #configre methods
 
-setIsMultiColourText( boolean )
+$captcha->setIsMultiColourText( boolean )
 
 set minimum character number 
-<code>setMinLength()</code>
+<code>$captcha->setMinLength()</code>
 
 set maximum character length
-setMaxLength() 
+$captcha->setMaxLength() 
 
 set number og random straigth lines in background
 
-setNumberOfLines()
+$captcha->setNumberOfLines()
 
 Min 1 and max is 100
 

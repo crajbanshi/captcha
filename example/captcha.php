@@ -2,9 +2,10 @@
 
 
 use PW\PwCaptcha;
-require_once 'pwcaptcha-master/src/PW/PwCaptcha.php';
 
-$captcha = new PwCaptcha();
+require_once '../src/PwCaptcha.php';
+
+$captcha = new pw\PwCaptcha();
 
 // set min text length 
 $captcha->setMinLength(2);
