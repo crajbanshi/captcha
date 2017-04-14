@@ -1,5 +1,5 @@
 {
-    "name": "pw/PwCaptcha",
+    "name": "lotus/captcha",
      "version": "1.0.0",	 
     "description": "Create and validate captcha Image",
     "authors": [
@@ -11,19 +11,19 @@
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
-	"pw/PwCaptcha": "^1.0.0",
+	"ext-gd":*,
         "another-vendor/package": "1.*"
     },
 	"repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/crajbanshi/pwcaptcha"
+            "url": "https://github.com/crajbanshi/captcha"
         }
     ],
 	"autoload": {
 
 		"psr-4": {
-			"pw/PwCaptcha\\": "src/PwCaptcha.php"
+			"lotus/Captcha\\": "src/Captcha.php"
 		}
 
 	}	

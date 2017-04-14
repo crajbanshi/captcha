@@ -1,11 +1,10 @@
 <?php
 
+use lotus\Captcha;
 
-use PW\PwCaptcha;
+require_once '../src/Captcha.php';
 
-require_once '../src/PwCaptcha.php';
-
-$captcha = new pw\PwCaptcha();
+$captcha = new lotus\Captcha();
 
 // set min text length 
 $captcha->setMinLength(2);

@@ -1,10 +1,10 @@
 <?php 
 
-use PW\PwCaptcha;
+use lotus\Captcha;
 
-require_once '../src/PwCaptcha.php';
+require_once '../src/Captcha.php';
 
-$captcha = new pw\PwCaptcha();
+$captcha = new lotus\Captcha();
 
 
 echo "class load";
