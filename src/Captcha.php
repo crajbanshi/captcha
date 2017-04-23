@@ -1,5 +1,5 @@
 <?php
-namespace lotus;
+namespace lotus\Captcha;
 
 if(! isset($_SESSION)){
 	session_id();

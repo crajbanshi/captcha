@@ -11,21 +11,18 @@
     ],
     "require": {
         "php": "^5.3.3 || ^7.0",
-	"ext-gd":"*",
-        "another-vendor/package": "1.*"
+	"ext-gd":"*"
     },
 	"repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/crajbanshi/captcha"
+            "url": "https://github.com/crajbanshi/lotus-captcha.git"
         }
     ],
 	"autoload": {
-
-		"psr-4": {
-			"lotus/Captcha\\": "src/Captcha.php"
-		}
-
+	    "psr-4": {
+            	"Lotus\\Captcha\\": "src/"
+            } 
 	}	
 	
 }
